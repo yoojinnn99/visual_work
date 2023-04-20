@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Basic.html</title>
+    <style>
+        /*
+            css 영역에서의 주석입니다 (Ctrl + /)
+        */
+        button{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        여기는 html 영역에서의 주석입니다. (Ctrl + /)
+    -->
+    <h1>여기는 제목 입니다</h1>
+    <p>안녕하세요 이제 시작이군요</p>
+    <button onclick="sayHi()">인사하기</button>
+    <script>
+        //alert("hi"); //페이지 로딩 시 한 번 실행되는 javascript 영역
+
+        /*
+            javascript 의 여러줄 주석은 css 영역에서의 주석과 동일하다
+        */
+
+        function sayHi() { //sayHi() 함수가 호출 될 때 마다 실행되는 javascript 영역, sayHi는 이름 짓고싶은거
+            alert("안녕하세요!");
+        }
+
+    </script>
+</body>
+</html>

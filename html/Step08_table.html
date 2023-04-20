@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step08_table.html</title>
+    <style>
+        .my-table {
+            /* table 경계선 사이의 공간을 없애기 */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>표(table) 형식으로 정보를 출력하기 (약식)</h1>
+    <table>
+        <!---
+            tr 요소 하나는 행 하나를 의미하는 것이다
+            tr의 자식요소로 th나 td가 오는데 해당 요소의 갯수가 칼럼의 갯수를 결정한다-->
+        <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>김구라</td>
+            <td>노량진</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>해골</td>
+            <td>행신동</td>
+        </tr>
+    </table>
+    <table border="1" class="my-table">
+        <!---
+            tr 요소 하나는 행 하나를 의미하는 것이다
+            tr의 자식요소로 th나 td가 오는데 해당 요소의 갯수가 칼럼의 갯수를 결정한다
+        -->
+        <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>김구라</td>
+            <td>노량진</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>해골</td>
+            <td>행신동</td>
+        </tr>
+    </table>
+</body>
+</html>

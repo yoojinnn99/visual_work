@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- html요소는 head 요소와 body 요소를 자식 요소로 가지고 있다 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_BlockElement.html</title>
+    <style>
+        /* 요소명 선택자 */
+        div {
+            color: blue;
+        }
+
+        .my-class{ /* .은 class속성 */
+            background-color: antiquewhite;
+        }
+
+        #one { /* #은 id 선택자 */
+            font-size: 30px;
+            font-weight: bold; /* 글씨굵기 */
+        }
+
+        #two > img { /* >는 id가 two인 요소의 자식 중에서 img를 선택 */
+            background-color: greenyellow;
+            width: 200px;
+        }
+
+        #three > img { /* >는 id가 three인 요소의 자식 중에서 img를 선택 */
+            background-color: pink;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- body 요소는 여러개의 div를 자식 요소로 가지고 있다 -->
+    <div>div 요소는 문단을 나타낼 때 사용합니다.</div>
+    <!-- div의 자손은 6개 (자식=자손이 될 수 있음)-->
+    <div class="my-class">문단에 해당하는 것은 문자열 뿐만이 아니고 다른 여러가지 요소도 될 수 있습니다.</div>
+    <div class="my-class" id="one">div 요소는 폭을 100% 차지하는 block 요소 입니다.</div> <!-- class는 그룹화-->
+    <div id="two">
+        <!-- 이 div 요소는 두개의 img를 자식 요소로 가지고 있다 -->
+        <img src="images/kim1.png"> 
+        <img src="images/rabbit_1.png">
+        <!-- img는 div의 자손-->
+    </div>
+    <div id="three">
+        <img src="images/image1.png">
+        <img src="images/image2.png">
+    </div>
+</body>
+</html>

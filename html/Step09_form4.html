@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step09_form4.html</title>
+</head>
+<body>
+    <div class="container">
+        <h1>폼 요소에 기본값 설정하기</h1>
+        <p>
+            서버에서 클라이언트에게 폼을 응답할 때 이미 저장된 값을
+            출력한 채로 응답을 해야 할 때가 있다. 
+            예를들어 회원 가입된 정보 보기로 이동한다면
+            DB에 이미 저장된 내용을 출력을 해야한다.
+        </p>
+        <form action="update.jsp">
+            이메일 <input type="email" name="email" value="aaa@naver.com">
+            <br>
+
+            <fieldset>
+                <legend>취미 정보 선택</legend>
+                <label>
+                    <input type="checkbox" name="hobby" value="soccer">축구
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="baking" checked>베이킹
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="piano" checked>피아노
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="etc">기타
+                </label>
+            </fieldset>
+
+            <label for="job">직업</label>
+            <select name="job" id="job">
+                <option value="programmer">프로게이머</option>
+                <option value="doctor">의사</option>
+                <option value="pianist" selected>피아니스트</option>
+                <option value="etc">기타</option>
+             </select>
+             <br>
+             하고 싶은 말
+             <br>
+             <!-- textarea는 value 속성이 없음. >InnterText< 라고하는 이 사이에 출력
+                  textarea의 초기값은 textarea의 innterText 로출력-->
+             <textarea name="comment" rows="10">김구라
+해골
+원숭이       </textarea> 
+             <br>
+             <button type="submit">수정</button>
+             <button type="reset">취소</button>
+
+        </form>
+    </div>
+</body>
+</html>
